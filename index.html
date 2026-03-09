@@ -65,6 +65,7 @@
     </section>
     <!-- log in page end -->
 
+    <!-- Dashboard page start -->
     <section id="dashboard-section" class="hidden">
       <nav
         class="bg-white border-b border-slate-100 px-10 py-5 flex flex-col md:flex-row justify-between items-center sticky top-0 z-50 gap-4"
@@ -117,14 +118,18 @@
         <div
           class="bg-white p-8 rounded-[32px] border border-slate-100 mb-10 flex justify-between items-center shadow-sm"
         >
-          <div>
-            <h2 class="text-4xl font-black text-slate-800 tracking-tighter">
-              <span id="count-display">0</span> Issues
-            </h2>
-            <p class="text-slate-400 font-medium mt-1">
-              Real-time issue tracking
-            </p>
+          <div class="flex items-center gap-2">
+            <div><img src="assets/Aperture.png" alt="" srcset="" /></div>
+            <div>
+              <h2 class="text-4xl font-black text-slate-800 tracking-tighter">
+                <span id="count-display">0</span> Issues
+              </h2>
+              <p class="text-slate-400 font-medium mt-1">
+                Real-time issue tracking
+              </p>
+            </div>
           </div>
+
           <div
             class="flex gap-6 font-bold text-[10px] uppercase tracking-widest"
           >
@@ -146,7 +151,9 @@
         ></div>
       </main>
     </section>
+    <!-- Dashboard page end -->
 
+    <!-- Modal start -->
     <dialog id="issue_modal" class="modal">
       <div
         class="modal-box max-w-2xl bg-white rounded-[40px] p-0 shadow-2xl overflow-hidden"
@@ -232,6 +239,7 @@
         <button>close</button>
       </form>
     </dialog>
+    <!-- Modal end -->
 
     <script src="app.js"></script>
   </body>
