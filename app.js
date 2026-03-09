@@ -1,4 +1,3 @@
-// Formats Date: "DD/MM/YYYY" (Dynamic)
 function getFormattedDate(dateStr) {
   const date = dateStr ? new Date(dateStr) : new Date();
   const day = String(date.getDate()).padStart(2, "0");
