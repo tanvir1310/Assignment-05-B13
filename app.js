@@ -60,7 +60,7 @@ function renderGrid(data) {
                     </div>
                     
                     <h3 class="font-bold text-slate-800 text-lg mb-3 line-clamp-2 h-14 leading-tight">${i.title}</h3>
-                    <p class="text-slate-400 text-xs line-clamp-2 mb-8 h-10 leading-relaxed">${i.description}</p>
+                    <p class="text-slate-600 text-xs line-clamp-2 mb-8 h-10 leading-relaxed">${i.description}</p>
                     
                     <div class="flex gap-2 mb-8">
                         <span class="tag-badge bg-rose-50 text-rose-400 border-rose-100"><i class="fa-solid fa-bug text-xs"></i> BUG</span>
@@ -68,8 +68,8 @@ function renderGrid(data) {
                     </div>
 
                     <div class="flex items-center justify-between pt-6 border-t border-slate-50">
-                        <span class="text-[10px] text-slate-400 font-bold uppercase tracking-tight"># by ${i.author}</span>
-                        <span class="text-[10px] text-slate-300 font-medium">${getFormattedDate(i.updatedAt)}</span>
+                        <span class="text-[10px] text-slate-600 font-bold uppercase tracking-tight"># by ${i.author}</span>
+                        <span class="text-[10px] text-slate-600 font-medium">${getFormattedDate(i.updatedAt)}</span>
                     </div>
                 </div>
             `,
