@@ -51,7 +51,7 @@ function renderGrid(data) {
   container.innerHTML = data
     .map(
       (i) => `
-                <div onclick="openIssueDetails('${i.id}')" class="issue-card p-8 rounded-[32px] ${i.status === "open" ? "border-open" : "border-closed"}">
+                <div onclick="openIssueDetails('${i.id}')" class="issue-card p-8 rounded-[8px] ${i.status === "open" ? "border-open" : "border-closed"}">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-8 h-8 rounded-full flex items-center justify-center ${i.status === "open" ? "bg-emerald-50 text-emerald-500" : "bg-indigo-50 text-indigo-500"}">
                             <i class="fa-solid fa-circle-dot text-xs"></i>
